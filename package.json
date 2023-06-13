@@ -7,9 +7,11 @@
     "@fortawesome/free-regular-svg-icons": "^6.2.0",
     "@fortawesome/free-solid-svg-icons": "^6.2.0",
     "@fortawesome/react-fontawesome": "^0.2.0",
+    "aesirx-crm-app": "file:.yalc/aesirx-crm-app",
     "aesirx-dma-app": "file:.yalc/aesirx-dma-app",
     "aesirx-lib": "^1.9.7",
     "aesirx-pim-app": "file:.yalc/aesirx-pim-app",
+    "aesirx-uikit": "^1.0.8",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-router-dom": "^5.2.0"
@@ -64,6 +66,10 @@
   },
   "resolutions": {
     "react": "^18",
-    "react-dom": "^18"
+    "react-dom": "^18",
+    "react-i18next": "^12",
+    "react-table": "^7",
+    "aesirx-uikit": "^1.0.8",
+    "aesirx-lib": "^1.9.7"
   }
 }

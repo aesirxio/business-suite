@@ -4,12 +4,12 @@
  */
 
 import React from 'react';
-import { mainMenu, menuSetup } from 'routes/menu';
+import { mainMenu } from 'routes/menu';
 import { Menu } from 'aesirx-uikit';
-import { useTranslation } from 'react-i18next';
+//import { useTranslation } from 'react-i18next';
 
 const SbarLeft = () => {
-  const { t } = useTranslation();
+  // const { t } = useTranslation();
 
   return (
     <>

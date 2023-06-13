@@ -1,6 +1,7 @@
 import { faUser } from '@fortawesome/free-solid-svg-icons/faUser';
 import { integrationMenu as DMAMenus } from 'aesirx-dma-app';
 import { integrationMenu as PIMMenus } from 'aesirx-pim-app';
+import { integrationMenu as CRMMenus } from 'aesirx-crm-app';
 
 const mainMenu = [
   {
@@ -20,6 +21,7 @@ const mainMenu = [
     link: `/crm`,
     icons: '/images/customers.svg',
     icons_color: '/images/customers.svg',
+    submenu: CRMMenus(),
   },
   {
     text: 'txt_left_menu_products',

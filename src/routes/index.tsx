@@ -16,6 +16,8 @@ import Comingsoon from 'pages/Comingsoon';
 
 import { integrationRoutes as DMARoutes } from 'aesirx-dma-app';
 import { integrationRoutes as PIMRoutes } from 'aesirx-pim-app';
+import { integrationRoutes as CRMRoutes } from 'aesirx-crm-app';
+
 import { Redirect } from 'react-router-dom';
 
 const authRoutes = [
@@ -37,11 +39,7 @@ const mainRoutes = [
     exact: true,
     main: () => <Comingsoon />,
   },
-  {
-    path: ['/crm'],
-    exact: true,
-    main: () => <Comingsoon />,
-  },
+
   {
     path: ['/content'],
     exact: true,
@@ -83,6 +81,6 @@ const settingRoutes = [
   },
 ];
 
-const fullRoutes = [...mainRoutes, ...DMARoutes(), ...PIMRoutes()];
+const fullRoutes = [...mainRoutes, ...DMARoutes(), ...PIMRoutes(), ...CRMRoutes()];
 
 export { authRoutes, fullRoutes as mainRoutes, settingRoutes };
