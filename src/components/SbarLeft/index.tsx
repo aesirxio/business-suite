@@ -14,10 +14,10 @@ const SbarLeft = () => {
   return (
     <>
       <Menu dataMenu={mainMenu} />
-
+      {/*
       <div className="border-top border-dark-blue">
         <Menu dataMenu={menuSetup} title={t('txt_set_up')} />
-      </div>
+      </div> */}
     </>
   );
 };

@@ -76,7 +76,7 @@ const profileMenu = [
 const menuSetup = [
   {
     text: 'txt_left_menu_members',
-    link: '/members',
+    link: '/settings',
     icons: '/images/setting.svg',
     icons_color: '/images/setting.svg',
   },
