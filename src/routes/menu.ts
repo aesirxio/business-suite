@@ -2,6 +2,8 @@ import { faUser } from '@fortawesome/free-solid-svg-icons/faUser';
 import { integrationMenu as DMAMenus } from 'aesirx-dma-app';
 import { integrationMenu as PIMMenus } from 'aesirx-pim-app';
 import { integrationMenu as CRMMenus } from 'aesirx-crm-app';
+import { integrationMenu as ContentMenus } from 'aesirx-content-app';
+import { integrationMenu as BIMenus } from 'aesirx-bi-app';
 
 const mainMenu = [
   {
@@ -35,6 +37,7 @@ const mainMenu = [
     link: `/content`,
     icons: '/images/content.svg',
     icons_color: '/images/content.svg',
+    submenu: ContentMenus(),
   },
   {
     text: 'txt_left_menu_marketing',
@@ -55,6 +58,7 @@ const mainMenu = [
     link: `/bi`,
     icons: '/images/analytics.svg',
     icons_color: '/images/analytics.svg',
+    submenu: BIMenus(),
   },
 ];
 

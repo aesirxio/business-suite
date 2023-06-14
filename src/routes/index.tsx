@@ -17,8 +17,10 @@ import Comingsoon from 'pages/Comingsoon';
 import { integrationRoutes as DMARoutes } from 'aesirx-dma-app';
 import { integrationRoutes as PIMRoutes } from 'aesirx-pim-app';
 import { integrationRoutes as CRMRoutes } from 'aesirx-crm-app';
+import { integrationRoutes as ContentRoutes } from 'aesirx-content-app';
 
 import { Redirect } from 'react-router-dom';
+import BIPage from 'pages/Bi';
 
 const authRoutes = [
   {
@@ -30,28 +32,22 @@ const authRoutes = [
 
 const mainRoutes = [
   {
-    path: ['/'],
+    path: '/',
     exact: true,
     main: () => <Redirect to="/pim" />,
   },
   {
-    path: ['/erp'],
-    exact: true,
-    main: () => <Comingsoon />,
-  },
-
-  {
-    path: ['/content'],
-    exact: true,
-    main: () => <Comingsoon />,
-  },
-  {
     path: ['/bi'],
+    exact: false,
+    main: () => <BIPage />,
+  },
+  {
+    path: '/erp',
     exact: true,
     main: () => <Comingsoon />,
   },
   {
-    path: ['/dam'],
+    path: '/dam',
     exact: true,
     main: () => <DigitalAssetsPage />,
   },
@@ -62,12 +58,12 @@ const mainRoutes = [
     main: () => <MembersPage />,
   },
   {
-    path: ['/members/edit/:id'],
+    path: '/members/edit/:id',
     exact: true,
     main: ({ match }: any) => <EditMemberProvider match={match} />,
   },
   {
-    path: ['/members/add'],
+    path: '/members/add',
     exact: true,
     main: () => <EditMemberProvider />,
   },
@@ -76,11 +72,17 @@ const mainRoutes = [
 const settingRoutes = [
   {
     path: '/profile',
-    exact: false,
+    exact: true,
     main: () => <ProfilePage />,
   },
 ];
 
-const fullRoutes = [...mainRoutes, ...DMARoutes(), ...PIMRoutes(), ...CRMRoutes()];
+const fullRoutes = [
+  ...mainRoutes,
+  ...DMARoutes(),
+  ...PIMRoutes(),
+  ...CRMRoutes(),
+  ...ContentRoutes(),
+];
 
 export { authRoutes, fullRoutes as mainRoutes, settingRoutes };
