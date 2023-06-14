@@ -3,7 +3,7 @@ import React from 'react';
 import 'aesirx-uikit/dist/index.css';
 
 import { AppProvider, Menu, isLogin } from 'aesirx-uikit';
-import appLanguages from './translations';
+import { appLanguages } from './translations';
 import { authRoutes, mainRoutes, settingRoutes } from './routes';
 import { profileMenu, settingMenu } from './routes/menu';
 import SbarLeft from 'components/SbarLeft';
