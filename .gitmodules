@@ -1,21 +1,28 @@
 [submodule "packages/aesirx-uikit"]
 	path = packages/aesirx-uikit
 	url = git@github.com:aesirxio/aesirx-uikit.git
+	branch = master
 [submodule "packages/aesirx-bi-app"]
 	path = packages/aesirx-bi-app
 	url = git@github.com:aesirxio/bi-app.git
+	branch = master
 [submodule "packages/aesirx-content-app"]
 	path = packages/aesirx-content-app
 	url = git@github.com:aesirxio/content-app.git
+	branch = main
 [submodule "packages/aesirx-crm-app"]
 	path = packages/aesirx-crm-app
 	url = git@github.com:aesirxio/crm-app.git
+	branch = main
 [submodule "packages/aesirx-dma-app"]
 	path = packages/aesirx-dma-app
 	url = git@github.com:aesirxio/dma-app.git
+	branch = master
 [submodule "packages/aesirx-lib"]
 	path = packages/aesirx-lib
 	url = git@github.com:aesirxio/aesirx-lib.git
+	branch = master
 [submodule "packages/aesirx-pim-app"]
 	path = packages/aesirx-pim-app
 	url = git@github.com:aesirxio/pim-app.git
+	branch = master
