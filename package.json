@@ -1,77 +1,19 @@
 {
-  "name": "aesirx-business-suite",
-  "version": "0.1.0",
   "private": true,
-  "dependencies": {
-    "@fortawesome/fontawesome-svg-core": "^6.2.0",
-    "@fortawesome/free-regular-svg-icons": "^6.2.0",
-    "@fortawesome/free-solid-svg-icons": "^6.2.0",
-    "@fortawesome/react-fontawesome": "^0.2.0",
-    "aesirx-bi-app": "file:.yalc/aesirx-bi-app",
-    "aesirx-content-app": "file:.yalc/aesirx-content-app",
-    "aesirx-crm-app": "file:.yalc/aesirx-crm-app",
-    "aesirx-dma-app": "file:.yalc/aesirx-dma-app",
-    "aesirx-lib": "^1.9.7",
-    "aesirx-pim-app": "file:.yalc/aesirx-pim-app",
-    "aesirx-uikit": "^1.0.8",
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0",
-    "react-router-dom": "^5.2.0"
-  },
-  "scripts": {
-    "start": "yarn run build && serve -s build",
-    "build": "craco build && react-inject-env set",
-    "test": "craco test",
-    "dev": "craco start",
-    "lint": "eslint 'src/**/'",
-    "format:check": "prettier --check 'src/**/*.{ts,tsx}'",
-    "format:write": "prettier --write 'src/**/*.{ts,tsx}'"
-  },
-  "eslintConfig": {
-    "extends": [
-      "react-app",
-      "react-app/jest"
-    ]
-  },
-  "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ]
-  },
+  "workspaces": [
+    "packages/*"
+  ],
   "devDependencies": {
-    "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
-    "@craco/craco": "^7.1.0",
-    "@testing-library/jest-dom": "^5.16.5",
-    "@testing-library/react": "^13.4.0",
-    "@testing-library/user-event": "^13.5.0",
-    "@types/jest": "^27.5.2",
-    "@types/node": "^16.18.35",
-    "@types/react": "^18.2.11",
-    "@types/react-dom": "^18.2.4",
-    "@types/react-router-dom": "^5.3.3",
-    "eslint": "^8.42.0",
-    "filemanager-webpack-plugin": "^8.0.0",
-    "git-revision-webpack-plugin": "^5.0.0",
-    "prettier": "^2.8.8",
-    "react-inject-env": "^2.1.0",
-    "react-scripts": "5.0.1",
-    "sass": "^1.63.3",
-    "serve": "^14.2.0",
-    "typescript": "^4.9.5"
+    "nx": "16.3.2"
   },
   "resolutions": {
+    "bootstrap": "5.2.3",
     "react": "^18",
-    "react-dom": "^18",
-    "react-i18next": "^12",
-    "react-table": "^7",
-    "aesirx-uikit": "^1.0.8",
-    "aesirx-lib": "^1.9.7"
+    "react-dom": "^18"
+  },
+  "scripts": {
+    "prepage": "nx run-many -t build -p aesirx-uikit aesirx-lib && nx run-many -t build:lib --exclude aesirx-uikit aesirx-lib business-suite",
+    "dev": "nx run aesirx-business-suite:dev",
+    "build": "nx run aesirx-business-suite:build"
   }
 }
