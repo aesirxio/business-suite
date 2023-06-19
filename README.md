@@ -21,6 +21,6 @@ AesirX Business Suiteis our Open-Source for all solutions
 ## Production
 
 Run on a webserver:
-    1. Run `yarn build` after changed `.env` file.
-    2. Upload `packages/business-suite/build` folder to webserver.
+1. Run `yarn build` after changed `.env` file.
+2. Upload `packages/business-suite/build` folder to webserver.
 
