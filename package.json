@@ -12,7 +12,8 @@
     "react-dom": "^18"
   },
   "scripts": {
-    "build": "nx run-many -t build -p aesirx-uikit aesirx-lib && nx run-many -t build:lib --exclude aesirx-uikit aesirx-lib business-suite",
-    "dev": "nx run aesirx-business-suite:dev"
+    "prepage": "nx run-many -t build -p aesirx-uikit aesirx-lib && nx run-many -t build:lib --exclude aesirx-uikit aesirx-lib business-suite",
+    "dev": "nx run aesirx-business-suite:dev",
+    "build": "nx run aesirx-business-suite:build"
   }
 }

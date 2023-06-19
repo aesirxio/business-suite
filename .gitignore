@@ -10,8 +10,8 @@
 /coverage
 
 # production
-/build
-/public/assets
+/**/build
+/packages/business-suite/public/assets
 
 # misc
 .DS_Store
