@@ -9,6 +9,9 @@ import { profileMenu, settingMenu } from './routes/menu';
 import SbarLeft from 'components/SbarLeft';
 import { AesirXDamStorage } from 'aesirx-dam-app';
 
+import './style.scss';
+import 'aesirx-dam-app/dist/index.css';
+
 function App() {
   return (
     <AppProvider

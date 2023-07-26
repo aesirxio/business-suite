@@ -26,3 +26,7 @@
 	path = packages/aesirx-pim-app
 	url = git@github.com:aesirxio/pim-app.git
 	branch = develop
+[submodule "packages/aesirx-dam-app"]
+	path = packages/aesirx-dam-app
+	url = git@github.com:aesirxio/dam-app.git
+	branch = develop
