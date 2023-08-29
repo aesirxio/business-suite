@@ -64,16 +64,13 @@
     "react-scripts": "5.0.1",
     "sass": "^1.63.3",
     "serve": "^14.2.0",
-    "typescript": "^4.9.5",
-    "nx": "16.3.2"
+    "typescript": "^4.9.5"
   },
   "resolutions": {
     "react": "^18",
     "react-dom": "^18",
     "react-i18next": "^12",
-    "react-table": "^7",
-    "aesirx-uikit": "^1.1.6",
-    "aesirx-lib": "^1.11.2"
+    "react-table": "^7"
   },
   "nx": {
     "targets": {}

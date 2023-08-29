@@ -6,9 +6,9 @@ AesirX Business Suiteis our Open-Source for all solutions
 
 ## Development setup
 
-1. This project is using Monorepos with git submodule. You need to run `git submodule update --init --recursive` then cloned the project.
+1. This project is using Monorepos with git submodule. You need to run `git submodule update --init --recursive` after cloned the project.
 2. Run `yarn install` to install the dependencies.
-3. Run `yarn prepage` to build the dependencies.
+3. Run `yarn prepare` to build the dependencies.
 2. Rename the `.env.dist` file to `.env` on `packages/business-suite` folder.
 3. Replace license keys in the `.env` file with the one provided in your profile account.
    1. `REACT_APP_SSO_CLIENT_ID` replace this with the provided `REACT_APP_SSO_CLIENT_ID` from https://dapp.web3id.aesirx.io
