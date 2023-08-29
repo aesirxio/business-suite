@@ -24,7 +24,8 @@
     "postcss": "^8",
     "jsdom": "^16",
     "json5": "^2",
-    "d3-color": "^3"
+    "d3-color": "^3",
+    "minimatch": "^5"
   },
   "scripts": {
     "prepare": "nx run-many -t build -p aesirx-uikit aesirx-lib && nx run-many -t build:lib --exclude aesirx-uikit aesirx-lib business-suite",
