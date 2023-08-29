@@ -1,15 +1,21 @@
 {
   "private": true,
   "workspaces": [
+    "packages/aesirx-bi-app",
+    "packages/aesirx-content-app",
+    "packages/aesirx-crm-app",
     "packages/aesirx-dam-app/packages/aesirx-dam-app",
     "packages/aesirx-dma-app/packages/aesirx-dma-app",
     "packages/aesirx-pim-app/packages/aesirx-pim-app",
-    "packages/*"
+    "packages/aesirx-lib",
+    "packages/aesirx-uikit",
+    "packages/business-suite"
   ],
   "devDependencies": {
     "nx": "16.3.2"
   },
   "resolutions": {
+    "bootstrap": "^5.3.1",
     "react": "^18",
     "react-dom": "^18",
     "tough-cookie": "^4",
