@@ -72,8 +72,8 @@
     "react-dom": "^18",
     "react-i18next": "^12",
     "react-table": "^7",
-    "aesirx-uikit": "^1.0.8",
-    "aesirx-lib": "^1.9.7"
+    "aesirx-uikit": "^1.1.6",
+    "aesirx-lib": "^1.11.2"
   },
   "nx": {
     "targets": {}
