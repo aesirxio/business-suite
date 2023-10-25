@@ -5422,6 +5422,53 @@ aes-js@^3.1.2:
   resolved "https://registry.yarnpkg.com/aes-js/-/aes-js-3.1.2.tgz#db9aabde85d5caabbfc0d4f2a4446960f627146a"
   integrity sha512-e5pEa2kBnBOgR4Y/p20pskXI74UEz7de8ZGVo58asOtvSVG5YAbJeELPZxOmt+Bnz3rX753YKhfIn4X4l1PPRQ==
 
+aesirx-dma-app@*:
+  version "2.0.1"
+  resolved "https://registry.yarnpkg.com/aesirx-dma-app/-/aesirx-dma-app-2.0.1.tgz#865757dd1a627d3a1ec8221b0ff6aa3ff9bc814c"
+  integrity sha512-tYh4eNX0LW7XRXuxWaqa/8vYx681mJtI9lFSJQ+rNaF0rWyYZQaA0cmSJryyEvS/6a1vNZDit4tUtRQLRiwKag==
+  dependencies:
+    "@ckeditor/ckeditor5-build-classic" "^37.1.0"
+    "@ckeditor/ckeditor5-react" "^6.0.0"
+    "@fortawesome/fontawesome-svg-core" "^6.2.0"
+    "@fortawesome/free-regular-svg-icons" "^6.2.0"
+    "@fortawesome/free-solid-svg-icons" "^6.2.0"
+    "@fortawesome/react-fontawesome" "^0.2.0"
+    aesirx-dam-app "*"
+    aesirx-lib "*"
+    aesirx-uikit "*"
+    bootstrap "^5.3.1"
+    date-fns "^2.30.0"
+    date-fns-tz "^2.0.0"
+    emoji-mart "^3.0.0"
+    html-react-parser "^1.2.7"
+    i18next "^22.4.14"
+    lodash "^4.17.21"
+    mobx "^6.9.0"
+    mobx-react "^7.6.0"
+    openai "^3.1.0"
+    react "^18.2.0"
+    react-big-calendar "^0.33.5"
+    react-bootstrap "^2.7.4"
+    react-datepicker "^4.8.0"
+    react-dom "^18.2.0"
+    react-dropzone "^14.2.3"
+    react-google-charts "^3.0.15"
+    react-i18next "^12.2.0"
+    react-iframe "^1.8.0"
+    react-lazy-load-image-component "^1.5.1"
+    react-number-format "^5.2.1"
+    react-router-dom "^5.2.0"
+    react-secure-storage "^1.2.2"
+    react-select "^5.7.3"
+    react-step-wizard "^5.3.5"
+    react-table "^7.6.2"
+    react-timezone-select "^1.0.7"
+    react-transition-group "^4.4.2"
+    simple-react-validator "^1.6.0"
+    swiper "^6.3.5"
+    twitter-text "^3.1.0"
+    web-vitals "^3.3.1"
+
 aesirx-sso@^1.2.1:
   version "1.2.3"
   resolved "https://registry.yarnpkg.com/aesirx-sso/-/aesirx-sso-1.2.3.tgz#94bf7f472836ac053ef27c1583b1ff15415debbd"
@@ -7079,9 +7126,9 @@ cross-spawn@^7.0.1, cross-spawn@^7.0.2, cross-spawn@^7.0.3:
     which "^2.0.1"
 
 crypto-js@^4.1.1:
-  version "4.1.1"
-  resolved "https://registry.yarnpkg.com/crypto-js/-/crypto-js-4.1.1.tgz#9e485bcf03521041bd85844786b83fb7619736cf"
-  integrity sha512-o2JlM7ydqd3Qk9CA0L4NL6mTzU2sdx96a+oOfPu8Mkl/PK51vSyoi8/rQ8NknZtk44vq15lmhAj9CIAGwgeWKw==
+  version "4.2.0"
+  resolved "https://registry.yarnpkg.com/crypto-js/-/crypto-js-4.2.0.tgz#4d931639ecdfd12ff80e8186dba6af2c2e856631"
+  integrity sha512-KALDyEYgpY+Rlob/iriUtjV6d5Eq+Y191A5g4UqLAi8CyGP9N1+FdVbkc1SxKc2r4YAYqG8JzO2KGL+AizD70Q==
 
 crypto-random-string@^2.0.0:
   version "2.0.0"
